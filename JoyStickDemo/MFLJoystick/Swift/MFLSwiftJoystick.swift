@@ -85,7 +85,7 @@ import UIKit
     }
 
     public override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
-        if let myTouch: UITouch = touches.first as? UITouch {
+        if let myTouch: UITouch = touches.first {
             var currentPos = myTouch.locationInView(self)
 
             let selfCenter = CGPointMake((bounds.origin.x + bounds.size.width/2),
